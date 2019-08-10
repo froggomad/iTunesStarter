@@ -34,17 +34,6 @@ class TopAlbumsTableViewController: UITableViewController {
             }
         }
     }
-    
-    private func fetchImage(for url: URL) -> UIImage? {
-        var image: UIImage?
-        
-        self.networkController.fetchAlbumArt(for: url) { (result) in
-            if let img = result {
-                image = img
-            }
-        }
-        return image
-    }
 
     // MARK: - Table view data source
 
@@ -52,7 +41,6 @@ class TopAlbumsTableViewController: UITableViewController {
         return self.albums.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         

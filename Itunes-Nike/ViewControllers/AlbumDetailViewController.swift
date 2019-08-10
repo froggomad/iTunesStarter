@@ -27,12 +27,12 @@ class AlbumDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        guard album != nil && self.isViewLoaded else { return }
+        self.view.backgroundColor = .white
         self.setupViews()
     }
     
     private func setupViews() {
-        guard album != nil && self.isViewLoaded else { return }
-        self.view.backgroundColor = .white
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = self.albumArtImage
@@ -48,21 +48,11 @@ class AlbumDetailViewController: UIViewController {
         let genres = album?.genres.compactMap({ (genre) -> String in
             return genre.name
         })
-        var metadataString: [String] = []
-        if let genresString = genres?.joined(separator: ", ") {
-            metadataString.append(genresString)
-        }
+        let genresString = genres?.joined(separator: ", ")
+        let copyrightString = album?.copyright
+        let releaseDataString = album?.releaseDate
         
-        if let releaseDataString = album?.releaseDate {
-            metadataString.append("Released: \(releaseDataString)")
-        }
-        
-        if let copyrightString = album?.copyright {
-            metadataString.append(copyrightString)
-        }
-        
-        
-        let combinedString = metadataString.joined(separator: ". ")
+        let combinedString = "\(genresString!). Released:\(releaseDataString!). \(copyrightString!)"
         metadataLabel.text = combinedString
         metadataLabel.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         metadataLabel.numberOfLines = 0
@@ -98,6 +88,7 @@ class AlbumDetailViewController: UIViewController {
         artistLabel.leftAnchor.constraint(equalTo: imageView.leftAnchor, constant: 8).isActive = true
         artistLabel.rightAnchor.constraint(equalTo: imageView.rightAnchor, constant: -8).isActive = true
         
+        
         let iTunesButton = UIButton()
         iTunesButton.translatesAutoresizingMaskIntoConstraints = false
         iTunesButton.setTitle("View in Apple Music", for: .normal)
@@ -117,9 +108,8 @@ class AlbumDetailViewController: UIViewController {
     }
     
     @objc private func navigateToItunes() {
-        if let urlString = self.album?.url,
-            let url = URL(string: urlString) {
-            UIApplication.shared.open(url, options: [:]) { (_) in}
+        UIApplication.shared.open(URL(string: album!.url)!, options: [:]) { (_) in
+            
         }
     }
 }
