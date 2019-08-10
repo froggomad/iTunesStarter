@@ -25,7 +25,7 @@
 		38614D9922FDE53700092AF4 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = "Itunes-Nike/Networking/NetworkController.swift"; sourceTree = SOURCE_ROOT; };
 		3875C5D722FE4C3F0003CB92 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlbumDetailViewController.swift; path = ../AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		3875C5DB22FE65200003CB92 /* TopAlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopAlbumsTableViewController.swift; path = ../TopAlbumsTableViewController.swift; sourceTree = "<group>"; };
-		38C637C222FE325800E6A2A1 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		38C637C222FE325800E6A2A1 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlbumTableViewCell.swift; path = "Itunes-Nike/Resources/AlbumTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +58,9 @@
 		38614D8622FDE51C00092AF4 /* Itunes-Nike */ = {
 			isa = PBXGroup;
 			children = (
-				38C637C222FE325800E6A2A1 /* AlbumTableViewCell.swift */,
+				387EE42022FE72A1003651FA /* Resources */,
 				387EE41F22FE7252003651FA /* Networking */,
 				3875C5DA22FE640B0003CB92 /* ViewControllers */,
-				38614D8722FDE51C00092AF4 /* AppDelegate.swift */,
-				38614D8E22FDE51E00092AF4 /* Assets.xcassets */,
 				38614D9022FDE51E00092AF4 /* LaunchScreen.storyboard */,
 				38614D9322FDE51E00092AF4 /* Info.plist */,
 			);
@@ -84,6 +82,16 @@
 				38614D9922FDE53700092AF4 /* NetworkController.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		387EE42022FE72A1003651FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38C637C222FE325800E6A2A1 /* AlbumTableViewCell.swift */,
+				38614D8722FDE51C00092AF4 /* AppDelegate.swift */,
+				38614D8E22FDE51E00092AF4 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
