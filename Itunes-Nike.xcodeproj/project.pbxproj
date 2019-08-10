@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38614D8822FDE51C00092AF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38614D8722FDE51C00092AF4 /* AppDelegate.swift */; };
+		38614D8F22FDE51E00092AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38614D8E22FDE51E00092AF4 /* Assets.xcassets */; };
+		38614D9222FDE51E00092AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38614D9022FDE51E00092AF4 /* LaunchScreen.storyboard */; };
+		38614D9A22FDE53700092AF4 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38614D9922FDE53700092AF4 /* NetworkController.swift */; };
+		3875C5D822FE4C3F0003CB92 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3875C5D722FE4C3F0003CB92 /* AlbumDetailViewController.swift */; };
+		3875C5DC22FE65200003CB92 /* TopAlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3875C5DB22FE65200003CB92 /* TopAlbumsTableViewController.swift */; };
+		38C637C322FE325800E6A2A1 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C637C222FE325800E6A2A1 /* AlbumTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38614D8422FDE51C00092AF4 /* Itunes-Nike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itunes-Nike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38614D8722FDE51C00092AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		38614D8E22FDE51E00092AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38614D9122FDE51E00092AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38614D9322FDE51E00092AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38614D9922FDE53700092AF4 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = SOURCE_ROOT; };
+		3875C5D722FE4C3F0003CB92 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		3875C5DB22FE65200003CB92 /* TopAlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumsTableViewController.swift; sourceTree = "<group>"; };
+		38C637C222FE325800E6A2A1 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38614D8122FDE51C00092AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38614D7B22FDE51C00092AF4 = {
+			isa = PBXGroup;
+			children = (
+				38614D8622FDE51C00092AF4 /* Itunes-Nike */,
+				38614D8522FDE51C00092AF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38614D8522FDE51C00092AF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38614D8422FDE51C00092AF4 /* Itunes-Nike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38614D8622FDE51C00092AF4 /* Itunes-Nike */ = {
+			isa = PBXGroup;
+			children = (
+				38C637C222FE325800E6A2A1 /* AlbumTableViewCell.swift */,
+				3875C5DB22FE65200003CB92 /* TopAlbumsTableViewController.swift */,
+				3875C5D722FE4C3F0003CB92 /* AlbumDetailViewController.swift */,
+				3875C5DA22FE640B0003CB92 /* ViewControllers */,
+				38614D9922FDE53700092AF4 /* NetworkController.swift */,
+				38614D8722FDE51C00092AF4 /* AppDelegate.swift */,
+				38614D8E22FDE51E00092AF4 /* Assets.xcassets */,
+				38614D9022FDE51E00092AF4 /* LaunchScreen.storyboard */,
+				38614D9322FDE51E00092AF4 /* Info.plist */,
+			);
+			path = "Itunes-Nike";
+			sourceTree = "<group>";
+		};
+		3875C5DA22FE640B0003CB92 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38614D8322FDE51C00092AF4 /* Itunes-Nike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38614D9622FDE51E00092AF4 /* Build configuration list for PBXNativeTarget "Itunes-Nike" */;
+			buildPhases = (
+				38614D8022FDE51C00092AF4 /* Sources */,
+				38614D8122FDE51C00092AF4 /* Frameworks */,
+				38614D8222FDE51C00092AF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Itunes-Nike";
+			productName = "Itunes-Nike";
+			productReference = 38614D8422FDE51C00092AF4 /* Itunes-Nike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38614D7C22FDE51C00092AF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Swiftly, LLC";
+				TargetAttributes = {
+					38614D8322FDE51C00092AF4 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 38614D7F22FDE51C00092AF4 /* Build configuration list for PBXProject "Itunes-Nike" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38614D7B22FDE51C00092AF4;
+			productRefGroup = 38614D8522FDE51C00092AF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38614D8322FDE51C00092AF4 /* Itunes-Nike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38614D8222FDE51C00092AF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38614D9222FDE51E00092AF4 /* LaunchScreen.storyboard in Resources */,
+				38614D8F22FDE51E00092AF4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38614D8022FDE51C00092AF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38614D8822FDE51C00092AF4 /* AppDelegate.swift in Sources */,
+				38614D9A22FDE53700092AF4 /* NetworkController.swift in Sources */,
+				3875C5D822FE4C3F0003CB92 /* AlbumDetailViewController.swift in Sources */,
+				38C637C322FE325800E6A2A1 /* AlbumTableViewCell.swift in Sources */,
+				3875C5DC22FE65200003CB92 /* TopAlbumsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38614D9022FDE51E00092AF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38614D9122FDE51E00092AF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38614D9422FDE51E00092AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		38614D9522FDE51E00092AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38614D9722FDE51E00092AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5A3323C976;
+				INFOPLIST_FILE = "Itunes-Nike/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johnhicks.Itunes-Nike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38614D9822FDE51E00092AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5A3323C976;
+				INFOPLIST_FILE = "Itunes-Nike/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johnhicks.Itunes-Nike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38614D7F22FDE51C00092AF4 /* Build configuration list for PBXProject "Itunes-Nike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38614D9422FDE51E00092AF4 /* Debug */,
+				38614D9522FDE51E00092AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38614D9622FDE51E00092AF4 /* Build configuration list for PBXNativeTarget "Itunes-Nike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38614D9722FDE51E00092AF4 /* Debug */,
+				38614D9822FDE51E00092AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38614D7C22FDE51C00092AF4 /* Project object */;
+}
