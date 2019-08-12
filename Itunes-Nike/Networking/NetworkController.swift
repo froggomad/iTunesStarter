@@ -32,9 +32,13 @@ struct Genre: Decodable {
 
 class NetworkController {
     
-    let baseURL = URL(string: "https://rss.itunes.apple.com/api/v1/us/itunes-music/top-albums/all/100/explicit.json")!
-    
     func fetchItunesData(completion: @escaping (Feed?) -> Void) {
+        
+        guard let baseURL = URL(string: "https://rss.itunes.apple.com/api/v1/us/itunes-music/top-albums/all/100/explicit.json") else {
+            NSLog("Invalid URL")
+            completion(nil)
+            return
+        }
         
         URLSession.shared.dataTask(with: baseURL) { (data, _, error) in
             if let error = error {

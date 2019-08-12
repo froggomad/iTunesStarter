@@ -13,12 +13,6 @@ class AlbumDetailViewController: UIViewController {
     var album: Album?
     var albumArtImage: UIImage?
     
-    // MARK: - Views
-    private var albumImageView: UIImageView?
-    private var metadataLabel: UILabel?
-    private var albumLabel: UILabel?
-    private var artistLabel: UILabel?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
@@ -65,6 +59,7 @@ class AlbumDetailViewController: UIViewController {
         let combinedString = metadataString.joined(separator: ". ")
         metadataLabel.text = combinedString
         metadataLabel.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        metadataLabel.textColor = .lightGray
         metadataLabel.numberOfLines = 0
         
         self.view.addSubview(metadataLabel)
