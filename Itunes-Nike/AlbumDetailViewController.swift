@@ -27,7 +27,7 @@ class AlbumDetailViewController: UIViewController {
     private func setupViews() {
         guard album != nil && self.isViewLoaded else { return }
         
-        // TODO: - Configure Views Here
+        self.view.backgroundColor = .black
     }
     
     @objc private func navigateToItunes() {
@@ -35,5 +35,25 @@ class AlbumDetailViewController: UIViewController {
             let url = URL(string: urlString) {
             UIApplication.shared.open(url, options: [:]) { (_) in}
         }
+    }
+}
+
+import SwiftUI
+
+struct DetailVCWrapper: UIViewControllerRepresentable {
+    typealias UIViewControllerType = AlbumDetailViewController
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<DetailVCWrapper>) -> AlbumDetailViewController {
+        return AlbumDetailViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: AlbumDetailViewController, context: UIViewControllerRepresentableContext<DetailVCWrapper>) {
+        //Stub
+    }
+}
+
+struct DetailViewPreviews: PreviewProvider {
+    static var previews: some View {
+        return DetailVCWrapper()
     }
 }

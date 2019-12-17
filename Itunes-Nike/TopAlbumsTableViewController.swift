@@ -74,3 +74,5 @@ class TopAlbumsTableViewController: UITableViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
+
+
